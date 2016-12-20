@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flickr Grid View Controller-->
+        <scene sceneID="yh2-jr-egZ">
+            <objects>
+                <viewController storyboardIdentifier="FlickrGrid" id="aIu-2c-feN" customClass="FlickrGridViewController" customModule="SkillUpTest_4rd" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uJ7-Ns-X0C"/>
+                        <viewControllerLayoutGuide type="bottom" id="WDB-lP-oe3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CSC-pY-8g5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0WA-J6-s1D">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bjd-UF-2Ud">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0WA-J6-s1D" secondAttribute="trailing" id="7sY-BG-vJy"/>
+                            <constraint firstItem="WDB-lP-oe3" firstAttribute="top" secondItem="0WA-J6-s1D" secondAttribute="bottom" id="IVI-8I-XIM"/>
+                            <constraint firstItem="0WA-J6-s1D" firstAttribute="top" secondItem="uJ7-Ns-X0C" secondAttribute="bottom" id="YFG-yn-HKX"/>
+                            <constraint firstItem="0WA-J6-s1D" firstAttribute="leading" secondItem="CSC-pY-8g5" secondAttribute="leading" id="anu-PC-tDq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="0WA-J6-s1D" id="Q4o-So-dYd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vN7-yY-hMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="145"/>
+        </scene>
+    </scenes>
+</document>

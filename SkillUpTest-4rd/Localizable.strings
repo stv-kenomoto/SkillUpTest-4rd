@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SkillUpTest-4rd
+
+  Created by Kouki Enomoto on 2016/12/17.
+  Copyright © 2016年 enomt. All rights reserved.
+*/
+
+"pleaseEnterKeywords" = "キーワードを入力してください";
+
+"networkError" = "ネットワーク環境の良い環境で\n再度お試しください。";
+
+"notExistPhoto" = "該当する写真がありません。\n検索ワードを変更してお試しください。";

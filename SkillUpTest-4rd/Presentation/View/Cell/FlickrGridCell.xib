@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fZ2-Kg-ldu" customClass="FlickrGridCell" customModule="SkillUpTest_4rd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="258"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="258"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="osZ-UW-BLw">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-mT-n5n">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ter-mT-n5n" firstAttribute="top" secondItem="osZ-UW-BLw" secondAttribute="bottom" constant="11" id="0mG-V5-c41"/>
+                <constraint firstAttribute="bottom" secondItem="Ter-mT-n5n" secondAttribute="bottom" constant="11" id="1hX-su-Fo0"/>
+                <constraint firstItem="osZ-UW-BLw" firstAttribute="top" secondItem="fZ2-Kg-ldu" secondAttribute="top" constant="11" id="Geo-zc-Zyl"/>
+                <constraint firstAttribute="trailing" secondItem="osZ-UW-BLw" secondAttribute="trailing" constant="11" id="PsW-s4-2uV"/>
+                <constraint firstAttribute="trailing" secondItem="Ter-mT-n5n" secondAttribute="trailing" constant="11" id="dxB-A5-g1Z"/>
+                <constraint firstItem="Ter-mT-n5n" firstAttribute="leading" secondItem="fZ2-Kg-ldu" secondAttribute="leading" constant="11" id="rvl-Ux-8x6"/>
+                <constraint firstItem="osZ-UW-BLw" firstAttribute="leading" secondItem="fZ2-Kg-ldu" secondAttribute="leading" constant="11" id="tyh-SA-vdb"/>
+            </constraints>
+            <size key="customSize" width="360" height="258"/>
+            <connections>
+                <outlet property="thumbnailImageView" destination="osZ-UW-BLw" id="4bI-zN-9zr"/>
+                <outlet property="titleLabel" destination="Ter-mT-n5n" id="mkr-l2-4vl"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="16"/>
+        </collectionViewCell>
+    </objects>
+</document>

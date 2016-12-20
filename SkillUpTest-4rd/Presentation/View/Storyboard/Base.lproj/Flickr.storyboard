@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7nG-va-suN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BEa-m7-QYn">
+            <objects>
+                <navigationController id="7nG-va-suN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y8l-r0-pAa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.56470588235294117" green="0.792156862745098" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uPN-ix-3bc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMH-uX-ZY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1458" y="-102"/>
+        </scene>
+        <!--Flickr View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FlickrViewController" customModule="SkillUpTest_4rd" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="26w-mS-Qy8">
+                                <segments>
+                                    <segment title="リスト"/>
+                                    <segment title="グリッド"/>
+                                </segments>
+                                <color key="tintColor" red="0.94117647058823528" green="0.38431372549019605" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentedControlValueDidChanging:" destination="BYZ-38-t0r" eventType="valueChanged" id="ThT-pu-O9q"/>
+                                </connections>
+                            </segmentedControl>
+                            <view hidden="YES" autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKQ-Ts-Ktf">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="写真を検索してね！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbj-Cg-PiV">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="P1a-u4-FcE"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="G4j-Gn-4G1"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P1a-u4-FcE" secondAttribute="bottom" constant="11" id="0Hh-h4-wvL"/>
+                            <constraint firstAttribute="trailing" secondItem="26w-mS-Qy8" secondAttribute="trailing" constant="11" id="1oU-tO-G2f"/>
+                            <constraint firstItem="GKQ-Ts-Ktf" firstAttribute="top" secondItem="26w-mS-Qy8" secondAttribute="bottom" constant="8" id="3JG-aR-5q6"/>
+                            <constraint firstItem="P1a-u4-FcE" firstAttribute="top" secondItem="26w-mS-Qy8" secondAttribute="bottom" constant="8" id="5zS-gP-kLP"/>
+                            <constraint firstItem="G4j-Gn-4G1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6d9-63-GgR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GKQ-Ts-Ktf" secondAttribute="bottom" id="DhO-s8-3Ql"/>
+                            <constraint firstItem="GKQ-Ts-Ktf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J6E-RQ-lig"/>
+                            <constraint firstItem="P1a-u4-FcE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="MaY-IW-FQf"/>
+                            <constraint firstItem="zbj-Cg-PiV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="11" id="QEt-ti-1yT"/>
+                            <constraint firstItem="26w-mS-Qy8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RVU-RM-FgZ"/>
+                            <constraint firstAttribute="trailing" secondItem="P1a-u4-FcE" secondAttribute="trailing" constant="11" id="ags-vy-qr3"/>
+                            <constraint firstAttribute="trailing" secondItem="zbj-Cg-PiV" secondAttribute="trailing" constant="11" id="egn-J5-BYe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G4j-Gn-4G1" secondAttribute="bottom" constant="8" id="gMc-hG-iGu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zbj-Cg-PiV" secondAttribute="bottom" constant="11" id="icl-KA-V0w"/>
+                            <constraint firstAttribute="trailing" secondItem="GKQ-Ts-Ktf" secondAttribute="trailing" id="n6g-Dj-aVk"/>
+                            <constraint firstItem="zbj-Cg-PiV" firstAttribute="top" secondItem="26w-mS-Qy8" secondAttribute="bottom" constant="8" id="njX-98-vhi"/>
+                            <constraint firstItem="26w-mS-Qy8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="vue-M9-2W9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Nv-zF-Px5"/>
+                    <connections>
+                        <outlet property="additionIndicator" destination="G4j-Gn-4G1" id="kth-oh-43b"/>
+                        <outlet property="flickrView" destination="GKQ-Ts-Ktf" id="NTJ-Q3-0H8"/>
+                        <outlet property="indicator" destination="P1a-u4-FcE" id="Rxw-xR-nDt"/>
+                        <outlet property="messageLabel" destination="zbj-Cg-PiV" id="8du-Dw-a5Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746.39999999999998" y="-102.09895052473765"/>
+        </scene>
+    </scenes>
+</document>
