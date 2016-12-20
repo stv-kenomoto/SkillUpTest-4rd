@@ -24,4 +24,4 @@ Document <br>
  └画面仕様書.pdf <br>
  
 ## スクリーンショット
-![画面キャプチャ](https://github.com/EnoMt/SkillUpTest-4rd/blob/master/ScreenShot/%E5%86%99%E7%9C%9F%E4%B8%80%E8%A6%A7.png "")
+![画面キャプチャ](https://github.com/stv-kenomoto/SkillUpTest-4rd/blob/master/ScreenShot/%E5%86%99%E7%9C%9F%E4%B8%80%E8%A6%A7.png "")
